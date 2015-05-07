@@ -18,12 +18,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # argument is a set of non-required options.
       # config.vm.synced_folder "../data", "/vagrant_data"
       # config.vm.synced_folder('----localfolder-----', '/home/vagrant/code', :nfs => true)
-      machine.vm.synced_folder '~/', '/home/vagrant/code', :nfs => true
+      machine.vm.synced_folder '~/Workspace/monde/rails/', '/home/vagrant/code', :nfs => true
 
       machine.vm.provision "ansible" do |ansible|
           ansible.playbook = "provisioning/playbook.yml"
           ansible.limit = 'all'
-          ansible.verbose = "vvv"
+          ansible.verbose = "v"
           ansible.sudo = "true"
       end
 
