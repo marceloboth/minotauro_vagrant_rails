@@ -26,7 +26,7 @@ This project automates the setup of a development environment for general Ruby o
 
 Building the virtual machine is this easy:
 
-    host $ git clone https://github.com/pragmaticivan/minotauro_vagrant_rails.git
+    host $ git clone https://github.com/marceloboth/minotauro_vagrant_rails.git
     host $ cd minotauro_vagrant_rails
     host $ vagrant up
 
